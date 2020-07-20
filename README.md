@@ -23,4 +23,5 @@
 * Les primitives string, number, etc. sont passées en paramètres par valeur alors que les objets sont passés en référence.
 * Une déclaration de fonction est sauvegardé en mémoire et peut être utilisé à n'importe quel moment. Une expression de fonction s'écrit comme suit : 
 ` var foo = function(){ return 'bar'}`. Les expressions de fonctions sont executés uniquement quand l'interpreteur lit la ligne de code.
+* Le scope fait référence à la visibilté des variables dans une fonction. Le contexte est lié à l'objet par lequel la fonction a été appelé.
 
