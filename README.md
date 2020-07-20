@@ -15,3 +15,12 @@
  * IIFE: `(function(){})()`
 * `var a = (2,3,5)`. La valeur de a est 5. La virgule retourne la valeur du dernier paramètre.
 * `2 in [1,2]` retourne `false` car in retourne un index d'un tableau et 2 n'est pas un index du tableau.
+* Closure c'est l'execution d'une fonction dans une fonction. Une closure maintient l'état du scope extérieur.
+* L'ordre d'accès aux variables est variables locales, paramètres de la fonction, les scopes extérieurs de la fonction, puis le contexte global.
+* L'ordre d'hoisting dans une fonction est la declaration de la fonction, puis la variable d'assignation de la fonction puis les variables. L'assignation d'une variable reste à sa place.
+* Dans une fonction, une déclaration de fonction de type `function a (){}` est hoisted en premier et agit de la meme façon que `var a = function (){}`
+* Quand on utilise `var customObject = Object.create(myObject);`, `customObject` a hérité de `myObject`donc `customObject`a accès à ses propriétés et aux propriétés de son père `myObject`.
+* Les primitives string, number, etc. sont passées en paramètres par valeur alors que les objets sont passés en référence.
+* Une déclaration de fonction est sauvegardé en mémoire et peut être utilisé à n'importe quel moment. Une expression de fonction s'écrit comme suit : 
+` var foo = function(){ return 'bar'}`. Les expressions de fonctions sont executés uniquement quand l'interpreteur lit la ligne de code.
+
