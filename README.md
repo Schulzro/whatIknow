@@ -9,3 +9,9 @@
   * `bind` retourne une exacte copie de la fonction avec le nouveau this comme contexte et les paramètres mis en entrée.
   * A la différence de `bind`, `apply` et `call` doivent s'executer tout de suite avec le contexte fourni. `apply`prend les arguments sous la forme d'un tableau alors que `call`prend les arguments un par un.
 * `arguments`est accessible dans chaque fonction et permet d'avoir accès aux arguments sous la forme d'un tableau-objet. Il n'a pas les méthodes classiques de `Array`.
+* `this`fait référence au contexte d'execution d'une fonction. `this`est toujours un objet.
+ * Dans le contexte global ou dans une fonction `this`fait référence à `window object`. 
+* IIFE veut dire Immediate Invoking Function et fait référence à une fonction qui s'execute immédiatement. Avec le mode `'use strict'`, la valeur de `this` est undefined. 
+ * IIFE: `(function(){})()`
+* `var a = (2,3,5)`. La valeur de a est 5. La virgule retourne la valeur du dernier paramètre.
+* `2 in [1,2]` retourne `false` car in retourne un index d'un tableau et 2 n'est pas un index du tableau.
