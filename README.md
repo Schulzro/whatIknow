@@ -34,5 +34,5 @@
 
 ### Liste chainée
 * Les listes chainées sont des chaînes des tableaux de deux éléments, l'information et l'adresse mémoire du prochain élément. L'avantage des listes chaînées est qu'il n'y a pas besoin de savoir quel sera l'espace mémoire nécessaire à l'avance et que l'ajout d'un nouveau élément n'est qu'une simple opération de O(1).
-
-
+* Le worst-case des listes chaînées est toujours O(1). De plus, ajouter un élément au début d'un tableau est O(1) alors que c'est O(n) pour un tableau dynamique.
+* Toutefois, l'inconvénient est que la lecture d'une liste chainée est plus longue que celle d'un tableau dynamique. En lecture ces tableaux ont O(1) alors qu'il faut parcourir toute la chaine pour trouver un élément i donc O(i) time.
