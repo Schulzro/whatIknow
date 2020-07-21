@@ -25,3 +25,7 @@
 ` var foo = function(){ return 'bar'}`. Les expressions de fonctions sont executés uniquement quand l'interpreteur lit la ligne de code.
 * Le scope fait référence à la visibilté des variables dans une fonction. Le contexte est lié à l'objet par lequel la fonction a été appelé.
 
+## Structure de données
+
+### Tableau
+* Les tableaux sont accessibles rapidement O(1) time mais chaque élément du tableau doit être de la même taille et les tableaux ont besoin de gros blocs ininterrompus de mémoire pour fonctionner. Parce que les éléments d'un tableau doivent être tous de la même taille. On peut se retrouver avec des espaces mémoires inutiles.Les tableaux de pointeurs permettent de résoudre ce problème en stockant l'information où c'est possible en mémoire et les adresses mémoires dans le tableau. Enfin les tableaux de pointeurs permettent de résoudre le problème de l'espace mémoire mais ralentit la lecture des informations par le processeur qui ne peut pas mettre en cache les informations du tableau.
