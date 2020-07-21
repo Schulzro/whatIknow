@@ -29,3 +29,10 @@
 
 ### Tableau
 * Les tableaux sont accessibles rapidement O(1) time mais chaque élément du tableau doit être de la même taille et les tableaux ont besoin de gros blocs ininterrompus de mémoire pour fonctionner. Parce que les éléments d'un tableau doivent être tous de la même taille. On peut se retrouver avec des espaces mémoires inutiles.Les tableaux de pointeurs permettent de résoudre ce problème en stockant l'information où c'est possible en mémoire et les adresses mémoires dans le tableau. Enfin les tableaux de pointeurs permettent de résoudre le problème de l'espace mémoire mais ralentit la lecture des informations par le processeur qui ne peut pas mettre en cache les informations du tableau.
+* En Python, JS et Ruby, les tableaux sont dynamiques par défault cad qu'ils s'agrandissent quand il n'y a plus de place. En Java les Array sont statiques et les ArrayList sont dynamiques.
+* Les tableaux dynamiques, lorsque plein, crée un autre tableau et double sa taille, copie les éléments du tableau et ajoute le nouveau élément. L'ancien tableau est ensuite libéré. Cette opération prend O(n) time parce qu'il faut copier les n éléments du tableau. Toutefois en moyenne le coup d'un ajout est O(1).
+
+### Liste chainée
+* Les listes chainées sont des chaînes des tableaux de deux éléments, l'information et l'adresse mémoire du prochain élément. L'avantage des listes chaînées est qu'il n'y a pas besoin de savoir quel sera l'espace mémoire nécessaire à l'avance et que l'ajout d'un nouveau élément n'est qu'une simple opération de O(1).
+
+
