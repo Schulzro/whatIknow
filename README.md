@@ -36,3 +36,7 @@
 * Les listes chainées sont des chaînes des tableaux de deux éléments, l'information et l'adresse mémoire du prochain élément. L'avantage des listes chaînées est qu'il n'y a pas besoin de savoir quel sera l'espace mémoire nécessaire à l'avance et que l'ajout d'un nouveau élément n'est qu'une simple opération de O(1).
 * Le worst-case des listes chaînées est toujours O(1). De plus, ajouter un élément au début d'un tableau est O(1) alors que c'est O(n) pour un tableau dynamique.
 * Toutefois, l'inconvénient est que la lecture d'une liste chainée est plus longue que celle d'un tableau dynamique. En lecture ces tableaux ont O(1) alors qu'il faut parcourir toute la chaine pour trouver un élément i donc O(i) time.
+
+### Tableaux de hashages
+* Les Hash tables fonctionnent grâce au système clé-valeur. On obtient la clé grâce à la fonction de hashage. Avec un tableau de hashage, on peut rapidement lire une valeur à partir d'une clé, O(1) time. L'inverse n'est pas vrai.
+* Si deux clés formées par la fonction de hashage sont égales, il y a une hash collision. Une des strategies est de stocker les valeurs dans une liste chainée. La clé donne accès à un pointeur qui permet d'accéder à la liste. Mais dans ce cas la, la lecture de la chaine redevient O(n). Mais globalement c'est rare donc on se dit que c'est O(1).
