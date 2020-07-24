@@ -44,3 +44,6 @@
 ## Algorithmie
 ### Binary search 
 * On divise un tableau de moitié n fois donc on a un cost time de O(log2(n)) 
+
+## Package.json
+### Versions 
