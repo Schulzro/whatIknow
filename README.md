@@ -40,6 +40,7 @@
 ### Tableaux de hashages
 * Les Hash tables fonctionnent grâce au système clé-valeur. On obtient la clé grâce à la fonction de hashage. Avec un tableau de hashage, on peut rapidement lire une valeur à partir d'une clé, O(1) time. L'inverse n'est pas vrai.
 * Si deux clés formées par la fonction de hashage sont égales, il y a une hash collision. Une des strategies est de stocker les valeurs dans une liste chainée. La clé donne accès à un pointeur qui permet d'accéder à la liste. Mais dans ce cas la, la lecture de la chaine redevient O(n). Mais globalement c'est rare donc on se dit que c'est O(1).
+* Pour empecher des man-in-the-middle attack, on peut vérifier que le hash fournit est bien égale au hash du fichier téléchargé.
 
 ## Algorithmie
 ### Binary search 
