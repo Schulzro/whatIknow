@@ -48,3 +48,31 @@
 
 ## Package.json
 ### Versions 
+
+## Achitecture
+### Microservices
+Voir gdoc https://drive.google.com/drive/u/0/folders/1xkmmvdybXlNgy7dk4UTPNerjTte3fGDW
+
+Dans une architecture en microservice, on essaye de partager les données et les services communs aussi peu que possible afin que chaque service puisse fonctionner indépendament.
+On parle de "share-as-little-as-possible".
+Les microservices sont un style d'architecture qui compose une application par une collection de services autonomes representant un business domain ( a bounded context).
+Architecturally, a bounded context refers to the coupling of a component (or in this case, a service) and its associated data as a single closed unit with minimal dependencies.
+Dans une architecture SOA, on aura tendance à mettre de la business logic dans le méchanisme de communication, en utilisant un ESB par exemple. Au contraire dans l'architecture microservices, on parle de smart endpoints et dumb pipes. En effet, les services possèdent la logique métier, recoivent une requete, calculent des trucs et renvoient une réponse. Les pipes ne font que transmettre la réponse à un autre service.
+### Service Oriented Architecture
+
+Dans une architecture de style SOA, on parle de "share-as-much-as-possible". L'important c'est de pouvoir réutiliser des fonctionnalités business.
+
+### Proxies 
+Un Proxy c'est un système qui agit au nom d'un autre système.
+Une fois que le proxy a intercepté la requete du client, il peut effectuer plusieurs actions comme bloquer l'accès au site car il est infecté par un virus ou le bloquer car le client est un spammeur. C'est le site internet qui utilise un proxy pour controler qui accède à son site.
+
+Un reverse proxy va transmettre les requetes d'un client X à un site Z. Le client pense qu'il accède au site Y mais en fait, Y est un reverse proxy qui transmet tout à Z. Un reverse proxy ne necessite aucune configuration du côté du client.
+Les CDN, content distribution network, fonctionne sur ce modèle. Pour éviter qu'un site web Z soit innondé de requetes qu'il ne peut pas gérer, il envoie tout sur des reverse proxy d'abord.
+### Remote access protocol
+Liste de certains protocole d'accès à des services par exemple: 
+* REST Respresentational State Transfer
+* SOAP Simple Object Access Protocol
+* AMQP Advanced Message Queuing Protocol
+* JMS Java Message Service
+* MSMQ Microsoft Message Queuing
+* Remote Method Invocation RMI
