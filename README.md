@@ -76,3 +76,6 @@ Liste de certains protocole d'accès à des services par exemple:
 * JMS Java Message Service
 * MSMQ Microsoft Message Queuing
 * Remote Method Invocation RMI
+
+## Event Loop JavaScript
+L'event loop regarde la callstack et pousse la première call back de la file Task queue si la call stack est vide. Les call backs arrivent dans la task queue via les Web APIs. Les Web Apis sont par exemple, la DOM API, l'api Ajax ou setTimeout.
