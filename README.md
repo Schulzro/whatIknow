@@ -25,6 +25,8 @@
 ` var foo = function(){ return 'bar'}`. Les expressions de fonctions sont executés uniquement quand l'interpreteur lit la ligne de code.
 * Le scope fait référence à la visibilté des variables dans une fonction. Le contexte est lié à l'objet par lequel la fonction a été appelé.
 
+* Propagation des évenements. Lors d'un event en mode bubbling, les handlers s'activent du child element au parent element. En mode Capturing, les handlers s'activent du parent vers l'enfant. Par défaut le mode bubbling est activé. `event.target`correspond à l'element qui a initié l'évènement. Cette valeur ne change pas au cours de la propagation de l'event. Pour stopper la propagation des events, il faut appeler `event.stopPropagation()`. Pour empecher l'activation des handlers sur un meme event, il faut appeler `event.stopImmediatePropagation()`
+
 ## Structure de données
 
 ### Tableau
