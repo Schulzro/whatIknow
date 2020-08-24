@@ -81,3 +81,17 @@ Liste de certains protocole d'accès à des services par exemple:
 
 ## Event Loop JavaScript
 L'event loop regarde la callstack et pousse la première call back de la file Task queue si la call stack est vide. Les call backs arrivent dans la task queue via les Web APIs. Les Web Apis sont par exemple, la DOM API, l'api Ajax ou setTimeout.
+
+## OOPS
+* Inheritance: l'héritage permet de définir une classe à partir d'une autre classe. L'héritage est utile pour la réulitisation du code et accélérer l'implémentation du code.
+* Encapsulation: l'encapsulation permet de protéger l'accès à des variables d'une classe. Ces variables pourront uniquement être accéder via une méthode de la classe.
+* Polymorphisme: le polymorphisme permet à un objet de prendre plusieurs formes. En Java, tous les objets sont polymorphiques puisqu'ils sont au moins leurs types et de type Objet.
+* Les attributs privés d'une classe sont uniquement accessibles depuis la cla
+* Abstaction: En utilisant le mot-clé abstract sur une classe, on l'empêche d'etre instantier. Pour l'utiliser, il faut hériter la classe et fournir une implémentation pour toutes les méthodes abstract de la classe.
+
+## Java
+* Un fichier Java ne peut contenir qu'une seule classe publique.
+* Ce n'est pas obligatoire d'avoir un constructeur par défaut dans une classe.
+*  Pour empecher une classe d'être hérité, il faut utliser le mot-clé `final`. Les méthodes d'une classe final ne peuvent pas être override.
+* Le garbage collection ne garantit pas à un programme de ne pas épuiser sa mémoire. Un programme peut créer des objets plus rapidement qu'ils ne seront collectés. Certains objets ne sont pas soumis au garbage collector.
+* Une classe `abstract`peut avoit des méthodes abstract et des méthodes non abstract.
