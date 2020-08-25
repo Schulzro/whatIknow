@@ -102,3 +102,9 @@ L'event loop regarde la callstack et pousse la première call back de la file Ta
 * Quand un constructor est private, la classe ne peut pas être hérité. La seule façon de créer un objet de la classe est de créer une méthode statique dans la classe qui crée l'objet.
 * Dans un bloc try-catch-finally, le finally est executé même si il y a un return ou un break dans le try.
 * Object Reflection en Java permet d'avoir des informations sur les variables et méthodes d'une classe.
+
+## Bases de données
+* INNER JOIN sélectionne seulement les entrées qui sont dans la table A et dans la table B.
+* LEFT OUTER JOIN sélectionne toutes les entrées de la table A et les entrées qui matchent dans la table B.
+* RIGHT OUTER JOIN sélectionne les entrées qui matchent de la table a et toutes les entrées de la table B.
+* **Denormalization** Dénormaliser c'est optimiser le temps de lecture d'une base de données en copiant des données ou en regroupant les données d'une certaine façon. C'est le job du developpeur de s'assurer que les données vont rester consistentes quand elles seront dénormaliser. La dénormalisation accélère la lecture mais ralentit l'écriture, la suppression et la mise à jour des données.
