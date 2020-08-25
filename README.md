@@ -98,3 +98,7 @@ L'event loop regarde la callstack et pousse la première call back de la file Ta
 * en Java, le polymorphime prend principalement deux formes: overloading et overriding. 
 ** Overriding est une fonctionnalité qui permet d'avoir une implémentation spécifique d'une méthode présente dans une classe parent. L'overriding s'effectue à runtime.Les signatures des deux classes doivent être les mêmes.
 ** Overloading est un polymorphisme de compiletime. Il s'agit de méthodes ayant le même nom mais pas le même nombre et le même type de paramètres.
+* Le Factory Pattern permet de cacher la logique de création d'un objet au client.
+* Quand un constructor est private, la classe ne peut pas être hérité. La seule façon de créer un objet de la classe est de créer une méthode statique dans la classe qui crée l'objet.
+* Dans un bloc try-catch-finally, le finally est executé même si il y a un return ou un break dans le try.
+* Object Reflection en Java permet d'avoir des informations sur les variables et méthodes d'une classe.
