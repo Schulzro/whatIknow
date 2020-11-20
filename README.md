@@ -119,3 +119,10 @@ L'event loop regarde la callstack et pousse la première call back de la file Ta
 ## Networking
 
 Une socket correspond à un endpoint dans une communication entre deux programmes. Une socket est liée à une adresse IP et à un numéro de port afin que la couche TCP puisse identifier l'application à laquelle les données sont destinées.
+
+## Selenium
+
+Selenium est une suite d'outils de testing de web apps. Selenium fonctionne dans une architecture client/server. Cette suite comprend 3 componsants
+* Selenium Client Lib avec des lib de plusieurs langages (Java, Python, Js, ect)
+* JSON Wire Protocol
+* Browser drivers (Chrome, IE, etc.)
