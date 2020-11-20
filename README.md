@@ -108,6 +108,7 @@ L'event loop regarde la callstack et pousse la première call back de la file Ta
 * LEFT OUTER JOIN sélectionne toutes les entrées de la table A et les entrées qui matchent dans la table B.
 * RIGHT OUTER JOIN sélectionne les entrées qui matchent de la table a et toutes les entrées de la table B.
 * **Denormalization** Dénormaliser c'est optimiser le temps de lecture d'une base de données en copiant des données ou en regroupant les données d'une certaine façon. C'est le job du developpeur de s'assurer que les données vont rester consistentes quand elles seront dénormaliser. La dénormalisation accélère la lecture mais ralentit l'écriture, la suppression et la mise à jour des données.
+* Une view en SQL c'est une sorte de variable de requête SQL. Ca permet de faire des requêtes plus simples et plus sécurisées car on peut choisir quelles sont les colonnes à rendre disponible dans la vue.
 
 ## Networking
 
