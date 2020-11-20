@@ -105,6 +105,10 @@ L'event loop regarde la callstack et pousse la première call back de la file Ta
 * Object Reflection en Java permet d'avoir des informations sur les variables et méthodes d'une classe.
 * DTO vs DAO: DTO pour Data transfer object, objet utilisé uniquement pour de la manipulation de données donc que des getters et des setters, pas de business logic. DAO pour Data Access Objet, objet utilisé pour persister de la donnée. Un DAO contient des méthodes de CRUD.
 
+## GitLab
+* Un job correspond à la plus petite brique executable par un pipeline. Un job est défini par les contraintes sous lesquels il doit être executé. Un job doit contenir un tag script. 
+* Un Runner est un programme permettant d'executer des jobs dans un pipeline. Un Runner est lié à un executor qui définit l'environnement dans lequel est executé le job. Exemple d'Executors (SSH, Shell, VirtualBox, Docker, etc.)
+
 ## Bases de données
 * INNER JOIN sélectionne seulement les entrées qui sont dans la table A et dans la table B.
 * LEFT OUTER JOIN sélectionne toutes les entrées de la table A et les entrées qui matchent dans la table B.
