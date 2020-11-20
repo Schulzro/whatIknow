@@ -88,6 +88,7 @@ L'event loop regarde la callstack et pousse la première call back de la file Ta
 * Polymorphisme: le polymorphisme permet à un objet de prendre plusieurs formes. En Java, tous les objets sont polymorphiques puisqu'ils sont au moins leurs types et de type Objet.
 * Les attributs privés d'une classe sont uniquement accessibles depuis la cla
 * Abstaction: En utilisant le mot-clé abstract sur une classe, on l'empêche d'etre instantier. Pour l'utiliser, il faut hériter la classe et fournir une implémentation pour toutes les méthodes abstract de la classe.
+* Une classe dit mixin est une classe qui contient des méthodes pouvant être utilisées par d'autres classes sans pour autant être parent de ces classes.
 
 ## Java
 * Un fichier Java ne peut contenir qu'une seule classe publique.
