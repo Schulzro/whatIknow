@@ -102,6 +102,7 @@ L'event loop regarde la callstack et pousse la première call back de la file Ta
 * Quand un constructor est private, la classe ne peut pas être hérité. La seule façon de créer un objet de la classe est de créer une méthode statique dans la classe qui crée l'objet.
 * Dans un bloc try-catch-finally, le finally est executé même si il y a un return ou un break dans le try.
 * Object Reflection en Java permet d'avoir des informations sur les variables et méthodes d'une classe.
+* DTO vs DAO: DTO pour Data transfer object, objet utilisé uniquement pour de la manipulation de données donc que des getters et des setters, pas de business logic. DAO pour Data Access Objet, objet utilisé pour persister de la donnée. Un DAO contient des méthodes de CRUD.
 
 ## Bases de données
 * INNER JOIN sélectionne seulement les entrées qui sont dans la table A et dans la table B.
