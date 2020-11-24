@@ -92,6 +92,7 @@ L'event loop regarde la callstack et pousse la première call back de la file Ta
 
 ## Java
 * Un fichier Java ne peut contenir qu'une seule classe publique.
+* `Long` est un objet, il peut donc être null alors que `long` est une valeur primitive et doit avoir une valeur.
 * Ce n'est pas obligatoire d'avoir un constructeur par défaut dans une classe.
 *  Pour empecher une classe d'être hérité, il faut utliser le mot-clé `final`. Les méthodes d'une classe final ne peuvent pas être override.
 * final variables -> creér une constante
