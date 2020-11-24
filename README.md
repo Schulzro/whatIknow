@@ -94,6 +94,9 @@ L'event loop regarde la callstack et pousse la première call back de la file Ta
 * Un fichier Java ne peut contenir qu'une seule classe publique.
 * Ce n'est pas obligatoire d'avoir un constructeur par défaut dans une classe.
 *  Pour empecher une classe d'être hérité, il faut utliser le mot-clé `final`. Les méthodes d'une classe final ne peuvent pas être override.
+* final variables -> creér une constante
+* final method -> la méthode ne peut pas être override
+* final class -> la classe ne peut pas être héritée
 * Le garbage collection ne garantit pas à un programme de ne pas épuiser sa mémoire. Un programme peut créer des objets plus rapidement qu'ils ne seront collectés. Certains objets ne sont pas soumis au garbage collector.
 * Une classe `abstract`peut avoit des méthodes abstract et des méthodes non abstract.
 * en Java, le polymorphime prend principalement deux formes: overloading et overriding. 
