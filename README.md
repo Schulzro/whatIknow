@@ -109,6 +109,16 @@ L'event loop regarde la callstack et pousse la première call back de la file Ta
 * Object Reflection en Java permet d'avoir des informations sur les variables et méthodes d'une classe.
 * DTO vs DAO: DTO pour Data transfer object, objet utilisé uniquement pour de la manipulation de données donc que des getters et des setters, pas de business logic. DAO pour Data Access Objet, objet utilisé pour persister de la donnée. Un DAO contient des méthodes de CRUD.
 
+## Maven
+* Project Object Model (POM), Maven reads the pom.xml to build a project. It defines the address for the project artifact using a coordinate system. Specifies project informatio, plugins, goals, dependencies and plugins.
+* Repositories hold artifiacts and dependencies
+** local repository .m2 folder -local cache
+** remote repository accessible via un protocole (ex: HTTP) pour accéder à des dependences. Remote Repo example The Central Maven Repository
+** le repo local est vérifié avant le remote repository
+* A Plugin a collection of goals, a goal is an action performed. Ex: The compiler plugin has two goals: compile sources and compile tests
+* Les plugins sont appelés dans des phases du lifecycle. Il y a 3 lifecycles: clean, default et site. Et chacun de ses lifecycles est composé de phases.
+* Executer une phase fait executer toutes les phases lui précédent dans le lifecycle.
+
 ## GitLab
 * Un job correspond à la plus petite brique executable par un pipeline. Un job est défini par les contraintes sous lesquels il doit être executé. Un job doit contenir un tag script. 
 * Un Runner est un programme permettant d'executer des jobs dans un pipeline. Un Runner est lié à un executor qui définit l'environnement dans lequel est executé le job. Exemple d'Executors (SSH, Shell, VirtualBox, Docker, etc.)
