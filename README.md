@@ -108,6 +108,7 @@ L'event loop regarde la callstack et pousse la première call back de la file Ta
 * Dans un bloc try-catch-finally, le finally est executé même si il y a un return ou un break dans le try.
 * Object Reflection en Java permet d'avoir des informations sur les variables et méthodes d'une classe.
 * DTO vs DAO: DTO pour Data transfer object, objet utilisé uniquement pour de la manipulation de données donc que des getters et des setters, pas de business logic. DAO pour Data Access Objet, objet utilisé pour persister de la donnée. Un DAO contient des méthodes de CRUD.
+* autoboxing: l'autoboxing en java est une action du compiler permet de convertir des types primitives en leur classes objet long to Long. A l'inverse, one parle d'unboxing quand le compiler convertit un Long en long. 
 
 ## Maven
 * Project Object Model (POM), Maven reads the pom.xml to build a project. It defines the address for the project artifact using a coordinate system. Specifies project informatio, plugins, goals, dependencies and plugins.
