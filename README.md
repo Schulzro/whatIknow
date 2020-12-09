@@ -109,7 +109,10 @@ L'event loop regarde la callstack et pousse la première call back de la file Ta
 * Object Reflection en Java permet d'avoir des informations sur les variables et méthodes d'une classe.
 * DTO vs DAO: DTO pour Data transfer object, objet utilisé uniquement pour de la manipulation de données donc que des getters et des setters, pas de business logic. DAO pour Data Access Objet, objet utilisé pour persister de la donnée. Un DAO contient des méthodes de CRUD.
 * autoboxing: l'autoboxing en java est une action du compiler permet de convertir des types primitives en leur classes objet long to Long. A l'inverse, one parle d'unboxing quand le compiler convertit un Long en long.
-* Un .jar contient des fichiers de ressources, des librairies, des fichiers de config. Un .war est packagé pour le web avec des fichiers en plus que le .jar comme des fichiers html/js/jsp. Un war peut être deployé sur n'importe quel container servlet 
+* Un .jar contient des fichiers de ressources, des librairies, des fichiers de config. Un .war est packagé pour le web avec des fichiers en plus que le .jar comme des fichiers html/js/jsp. Un war peut être deployé sur n'importe quel container servlet.
+* HashSet vs TreeSet: 
+** HashSet: C'est un set qui utilise une Data Structure de hashage. Efficace pour les recherches, insertions et suppressions.O(1). Les hashSet permettes des éléments null et pas les TreeSet
+** TreeSet: C'est un set qui utilise une Data Structure de graphe. Plus long pour la recherche, l'insertion et la suppression O(log(n)). Par contre un TreeSet garde l'ordre d'insertion.
 
 ## Maven
 * Project Object Model (POM), Maven reads the pom.xml to build a project. It defines the address for the project artifact using a coordinate system. Specifies project informatio, plugins, goals, dependencies and plugins.
