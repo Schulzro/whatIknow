@@ -150,6 +150,9 @@ Selenium est une suite d'outils de testing de web apps. Selenium fonctionne dans
 * Selenium WebDriver
 * SeleniumGrid
 
+### Bash
+* Rendre un fichier executable: chmod +x nom du fichier
+
 ## Networking
 
 Une socket correspond à un endpoint dans une communication entre deux programmes. Une socket est liée à une adresse IP et à un numéro de port afin que la couche TCP puisse identifier l'application à laquelle les données sont destinées.
