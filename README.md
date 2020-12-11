@@ -135,6 +135,7 @@ L'event loop regarde la callstack et pousse la première call back de la file Ta
 * **Denormalization** Dénormaliser c'est optimiser le temps de lecture d'une base de données en copiant des données ou en regroupant les données d'une certaine façon. C'est le job du developpeur de s'assurer que les données vont rester consistentes quand elles seront dénormaliser. La dénormalisation accélère la lecture mais ralentit l'écriture, la suppression et la mise à jour des données.
 * Une view en SQL c'est une sorte de variable de requête SQL. Ca permet de faire des requêtes plus simples et plus sécurisées car on peut choisir quelles sont les colonnes à rendre disponible dans la vue.
 * **Collation**: Une collation est un réglage qui permet de définir comment une base de données doit gérér un caractère, soit au niveau du server, de la base ou de la colonne. Chaque collation définit un bit pattern associé à chaque character. Ensuite une collation définit comment des données de caractères doivent être comparées et triées en prenant en compte les spécifités de la langue mais aussi des options tel que respect de la casse ou des accents. Des requêtes identiques accédant à des colonnes identiques mais avec des collations différentes peut donc donner des résultats différents
+* utf8 est une encodage de caractères informatiques. Il permet de stocker des caractères dans une base de données sur 3 octets. utf8mb4 est une autre tecnique d'encodage qui permet de stocker des caractères sur 4 octets et notamment les emojis.
 
 ## Testing
 
