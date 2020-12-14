@@ -128,6 +128,17 @@ L'event loop regarde la callstack et pousse la première call back de la file Ta
 * Un job correspond à la plus petite brique executable par un pipeline. Un job est défini par les contraintes sous lesquels il doit être executé. Un job doit contenir un tag script. 
 * Un Runner est un programme permettant d'executer des jobs dans un pipeline. Un Runner est lié à un executor qui définit l'environnement dans lequel est executé le job. Exemple d'Executors (SSH, Shell, VirtualBox, Docker, etc.)
 
+## Git
+* Move changes from one commit to another
+** git reset --soft <commit_id>^ (reset soft to the commit before the one you want to change)
+** git restore <file-path> 
+** git commit --fixup <commit_id>
+** git stash the file to put to another commit
+** git rebase 
+** git stash pop on the commit you want to assign the changes
+** amend the commit 
+** finish rebase
+ 
 ## Bases de données
 * INNER JOIN sélectionne seulement les entrées qui sont dans la table A et dans la table B.
 * LEFT OUTER JOIN sélectionne toutes les entrées de la table A et les entrées qui matchent dans la table B.
