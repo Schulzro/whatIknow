@@ -147,6 +147,8 @@ L'event loop regarde la callstack et pousse la première call back de la file Ta
 * Une view en SQL c'est une sorte de variable de requête SQL. Ca permet de faire des requêtes plus simples et plus sécurisées car on peut choisir quelles sont les colonnes à rendre disponible dans la vue.
 * **Collation**: Une collation est un réglage qui permet de définir comment une base de données doit gérér un caractère, soit au niveau du server, de la base ou de la colonne. Chaque collation définit un bit pattern associé à chaque character. Ensuite une collation définit comment des données de caractères doivent être comparées et triées en prenant en compte les spécifités de la langue mais aussi des options tel que respect de la casse ou des accents. Des requêtes identiques accédant à des colonnes identiques mais avec des collations différentes peut donc donner des résultats différents
 * utf8 est une encodage de caractères informatiques. Il permet de stocker des caractères dans une base de données sur 3 octets. utf8mb4 est une autre tecnique d'encodage qui permet de stocker des caractères sur 4 octets et notamment les emojis.
+* **SQL_CALC_FOUND_ROWS**: permet de compter le nombre maximum de résultats sans prendre en compte le LIMIT. Une fois une requête faite avec SQL_CALC_FOUND_ROWS, il faut faire une autre requête avec la fonction FOUND_ROWS() pour connaitre le nombre maximum de résultats
+* **Coalesce**: retourne la première valeur non null dans une liste
 
 ## Testing
 
